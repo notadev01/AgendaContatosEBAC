@@ -1,6 +1,6 @@
 const form = document.querySelector('#form');
 const nomeContato = document.querySelector('#nomeContato');
-const numero = document.querySelector('#numero');
+const telefone = document.querySelector('#telefone');
 const tbody = document.querySelector('#tbody');
 let contatos = [];
 
@@ -14,7 +14,7 @@ form.addEventListener('submit', function(e) {
     
         let novaLinha = `<tr>
         <td>${nomeContato.value}</td>
-        <td>${numero.value}</td>
+        <td>${telefone.value}</td>
         </tr>`
     
         tbody.innerHTML += novaLinha
@@ -22,6 +22,6 @@ form.addEventListener('submit', function(e) {
     }
 
     nomeContato.value = '';
-    numero.value = '';
+    telefone.value = '';
 
 })
